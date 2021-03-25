@@ -5,5 +5,4 @@ CREATE TABLE IF NOT EXISTS `TYPE_INGREDIENTS` (
 											  UNIQUE KEY (`NOM_TYPE_INGREDIENT`)) ENGINE = InnoDB
 																				  DEFAULT CHARSET = `UTF8`;
 
-
-fghjlklk
+fhgjholnj,m
