@@ -2,8 +2,13 @@ CREATE TABLE IF NOT EXISTS `RECETTES` (
 											  `ID_RECETTE`  SMALLINT UNSIGNED AUTO_INCREMENT,
 											  `NOM_RECETTE` VARCHAR(50) NOT NULL,
 	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
+					                                                  `ID_CATEGORIE`  SMALLINT UNSIGNED AUTO_INCREMENT,
 											  PRIMARY KEY (`ID_TYPE_INGREDIENT`),
-											  UNIQUE KEY (`NOM_TYPE_INGREDIENT`)) ENGINE = InnoDB
+											  UNIQUE KEY (`NOM_TYPE_INGREDIENT`)) 
+										          INDEX(`ID_CATEGORIE`),
+							    CONSTRAINT `RECETTE_ID_CATEGORIE` FOREIGN KEY (`ID_CATEGORIE`) REFERENCES `CATEGORIE` (`ID_CATEGORIE`),
+
+												      ENGINE = InnoDB
 																				  DEFAULT CHARSET = `UTF8`;
 
 CREATE TABLE IF NOT EXISTS `CATEGORIES` (
