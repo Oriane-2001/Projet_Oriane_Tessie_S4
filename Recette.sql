@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS `TYPE_INGREDIENTS` (
 																				  DEFAULT CHARSET = `UTF8`;
 
 
+fgghvjhjklkl
