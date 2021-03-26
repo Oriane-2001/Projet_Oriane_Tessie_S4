@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS `CATEGORIES` (
-										   `ID_CATEGORIE`  INT UNSIGNED AUTO_INCREMENT,
+										   `ID_CATEGORIE`  SMALLINT UNSIGNED NOT NULL,
 										   `NOM_CATEGORIE` VARCHAR(50) NOT NULL,
 										   PRIMARY KEY (`ID_CATEGORIE`),
 										   UNIQUE KEY (`NOM_CATEGORIE`)) 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `RECETTES` (
 											  `ID_RECETTE`            INT UNSIGNED AUTO_INCREMENT,
 											  `NOM_RECETTE` VARCHAR(50) NOT NULL,
 	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
-					                                                  `ID_CATEGORIE` INT NOT NULL,
+					                                                  `ID_CATEGORIE` SMALLINT UNSIGNED NOT NULL,
 											  `NB_PERSONNE` INT NOT NULL,
 											  PRIMARY KEY (`ID_RECETTE`, `ID_CATEGORIE`),
 											   UNIQUE KEY (`NOM_RECETTE`),
