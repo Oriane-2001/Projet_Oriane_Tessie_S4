@@ -32,7 +32,7 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			
 INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE` , `ID_CATEGORIE`, `NB_PERSONNE` )
 		VALUES
-			( '1', 'Wrap au thon et mayonnaise' '2021-02-10', '2', 3 ),
+			( '1', 'Wrap au thon et mayonnaise', '2021-02-10', '2', 3 ),
 			;
 			
 			
