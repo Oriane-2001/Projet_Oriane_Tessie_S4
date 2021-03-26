@@ -41,11 +41,11 @@ INSERT INTO `CHOIX` ( `ID_RECETTE, `ID_INTERNAUTE` )
 			( '1', '1' ),
 			;
 		
-INSERT INTO `UTILISATION` (  `ID_RECETTE` ,  `ID_INGREDIENT`, `QUANTITE`, `UNITE` )
+INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE` )
 		VALUES
 			( '1', '1', 3 , NULL),
 			( '1', '2' , 140, 'grammes'),
-			( '1', '3', 3, NULL )
+			( '1', '3', 3, NULL ),
 			( '1', '4', 2, 'cuillères à soupe' ),
 			( '1', '5', 1, 'pincée' ),
 			( '1', '6', 1, 'pincée' ),
