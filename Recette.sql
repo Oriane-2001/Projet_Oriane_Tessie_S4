@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `RECETTES` (
 											  `NOM_RECETTE` VARCHAR(50) NOT NULL,
 	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
 					                                                  `ID_CATEGORIE`  SMALLINT UNSIGNED AUTO_INCREMENT,
-											  `NB_PERSONNE` INT NOT NULL
+											  `NB_PERSONNE` INT NOT NULL,
 											  PRIMARY KEY (`ID_RECETTE`),
 											   UNIQUE KEY (`NOM_RECETTE`),
 										          INDEX(`ID_CATEGORIE`),
