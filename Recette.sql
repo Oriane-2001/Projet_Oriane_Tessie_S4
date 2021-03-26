@@ -1,17 +1,3 @@
-CREATE TABLE IF NOT EXISTS `RECETTES` (
-											  `ID_RECETTE`            INT UNSIGNED AUTO_INCREMENT,
-											  `NOM_RECETTE` VARCHAR(50) NOT NULL,
-	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
-					                                                  `ID_CATEGORIE` INT NOT NULL,
-											  `NB_PERSONNE` INT NOT NULL,
-											  PRIMARY KEY (`ID_RECETTE`),
-											   UNIQUE KEY (`NOM_RECETTE`),
-										          INDEX(`ID_CATEGORIE`),
-											  CONSTRAINT `RECETTE_ID_CATEGORIE` FOREIGN KEY (`ID_CATEGORIE`) REFERENCES `CATEGORIES` (`ID_CATEGORIE`))
-
- 	ENGINE = InnoDB
-	 DEFAULT CHARSET = 'UTF8';
-
 CREATE TABLE IF NOT EXISTS `CATEGORIES` (
 										   `ID_CATEGORIE`  INT UNSIGNED AUTO_INCREMENT,
 										   `NOM_CATEGORIE` VARCHAR(50) NOT NULL,
@@ -49,6 +35,20 @@ CREATE TABLE IF NOT EXISTS `ETAPES`(
 										UNIQUE KEY (`CONTENU_ETAPE`)) 
 	ENGINE = InnoDB 
 	DEFAULT CHARSET = `UTF8`;
+											    
+CREATE TABLE IF NOT EXISTS `RECETTES` (
+											  `ID_RECETTE`            INT UNSIGNED AUTO_INCREMENT,
+											  `NOM_RECETTE` VARCHAR(50) NOT NULL,
+	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
+					                                                  `ID_CATEGORIE` INT NOT NULL,
+											  `NB_PERSONNE` INT NOT NULL,
+											  PRIMARY KEY (`ID_RECETTE`),
+											   UNIQUE KEY (`NOM_RECETTE`),
+										          INDEX(`ID_CATEGORIE`),
+											  CONSTRAINT `RECETTE_ID_CATEGORIE` FOREIGN KEY (`ID_CATEGORIE`) REFERENCES `CATEGORIES` (`ID_CATEGORIE`))
+
+ 	ENGINE = InnoDB
+	 DEFAULT CHARSET = 'UTF8';
 											    
 CREATE TABLE IF NOT EXISTS `CHOIX` (
 										`ID_RECETTE`            INT NOT NULL,
