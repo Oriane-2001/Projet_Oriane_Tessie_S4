@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS `RECETTES` (
 	                                                                                  `DATE_PUBLICATION_RECETTE` DATE        NOT NULL,
 					                                                  `ID_CATEGORIE`  SMALLINT UNSIGNED AUTO_INCREMENT,
 											  `NB_PERSONNE` INT NOT NULL
-											  PRIMARY KEY (`ID_RECETTE),
+											  PRIMARY KEY (`ID_RECETTE`),
+											   UNIQUE KEY (`NOM_RECETTE`)
 										          INDEX(`ID_CATEGORIE`),
 							    				  CONSTRAINT `RECETTE_ID_CATEGORIE` FOREIGN KEY (`ID_CATEGORIE`) REFERENCES `CATEGORIES` (`ID_CATEGORIE`)),
 
