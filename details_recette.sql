@@ -13,6 +13,14 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '4', 'Mayonnaise' ),
 			( '5', 'Sel' ),
 			( '6', 'Poivre' ),
+			( '7', 'lentilles corail' ),
+			( '8', 'crème de coco' ),
+			( '9', 'oignon rouge' ),
+			( '10', 'curry en poudre' ),
+			( '11', 'concentré de tomates' ),
+			( '12', 'gousses d'ail' ),
+			( '13', 'gingembre' ),
+			( '14', 'huile végétal' )
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
@@ -28,6 +36,11 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '4', '4', 'Etalez les tortillas sur un plan de travail, garnissez-les d’une feuille de laitue et recouvrez de préparation au thon' ),
 			( '5', '5', 'Roulez les tortillas et coupez-les en deux' ),
 			( '6', '6', 'Servez aussitôt' ),
+			( '7', '1', 'Rincez les lentilles, mettez-les dans une casserole et recouvrez-les d’eau. Portez à ébullition, baissez le feu et laissez mijoter pendant une quinzaine de minutes, jusqu’à ce que les lentilles soient tendres. Égouttez.' ),
+			( '8', '2', 'Pelez puis émincez l'oignon et l'ail. Pelez puis râpez ou émincez très finement le gingembre.' ),
+			( '9', '3', 'Dans une sauteuse, faites revenir l'oignon, l'ail et le gingembre dans deux cuillères à soupe d'huile, pendant cinq minutes, sur feu moyen.' ),
+			( '10', '4', 'Ajoutez les épices, mélangez, ajoutez le concentré de tomates et mélangez bien. Ajoutez le lait ou la crème de coco, salez et mélangez. Faites cuire pendant cinq minutes, goûtez et rectifiez éventuellement l’assaisonnement.' ),
+			( '11', '5', 'Ajoutez les lentilles cuites et égouttées et mélangez.Si le mélange est trop sec, ajoutez un peu d’eau.' ),
 			;
 			
 INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE` , `ID_CATEGORIE`, `NB_PERSONNE` )
