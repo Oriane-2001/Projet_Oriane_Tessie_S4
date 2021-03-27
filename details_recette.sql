@@ -20,7 +20,7 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '11', 'concentré de tomates' ),
 			( '12', 'gousses d'ail' ),
 			( '13', 'gingembre' ),
-			( '14', 'huile végétal' )
+			( '14', 'huile de tournesol' )
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
