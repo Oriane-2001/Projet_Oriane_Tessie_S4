@@ -35,13 +35,12 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '2', '2', 'Ajoutez-y la mayonnaise, du sel et du poivre et mélangez bien ' ),
 			( '3', '3', 'Lavez et essorez les feuilles de laitue' ),
 			( '4', '4', 'Etalez les tortillas sur un plan de travail, garnissez-les d’une feuille de laitue et recouvrez de préparation au thon' ),
-			( '5', '5', 'Roulez les tortillas et coupez-les en deux' ),
-			( '6', '6', 'Servez aussitôt' ),
-			( '7', '1', 'Rincez les lentilles, mettez-les dans une casserole et recouvrez-les d’eau. Portez à ébullition, baissez le feu et laissez mijoter pendant une quinzaine de minutes, jusqu’à ce que les lentilles soient tendres. Égouttez.' ),
-			( '8', '2', 'Pelez puis émincez l'oignon et l'ail. Pelez puis râpez ou émincez très finement le gingembre.' ),
-			( '9', '3', 'Dans une sauteuse, faites revenir l'oignon, l'ail et le gingembre dans l'huile, pendant cinq minutes, sur feu moyen.' ),
-			( '10', '4', 'Ajoutez les épices, mélangez, ajoutez le concentré de tomates et mélangez bien. Ajoutez le lait ou la crème de coco, salez et mélangez. Faites cuire pendant cinq minutes, goûtez et rectifiez éventuellement l’assaisonnement.' ),
-			( '11', '5', 'Ajoutez les lentilles cuites et égouttées et mélangez.Si le mélange est trop sec, ajoutez un peu d’eau.' )
+			( '5', '5', 'Roulez les tortillas et coupez-les en deux. C'est prêt !' ),
+			( '6', '1', 'Rincez les lentilles, mettez-les dans une casserole et recouvrez-les d’eau. Portez à ébullition, baissez le feu et laissez mijoter pendant une quinzaine de minutes, jusqu’à ce que les lentilles soient tendres. Égouttez.' ),
+			( '7', '2', 'Pelez puis émincez l'oignon et l'ail. Pelez puis râpez ou émincez très finement le gingembre.' ),
+			( '8', '3', 'Dans une sauteuse, faites revenir l'oignon, l'ail et le gingembre dans l'huile, pendant cinq minutes, sur feu moyen.' ),
+			( '9', '4', 'Ajoutez les épices, mélangez, ajoutez le concentré de tomates et mélangez bien. Ajoutez le lait ou la crème de coco, salez et mélangez. Faites cuire pendant cinq minutes.' ),
+			( '10', '5', 'Ajoutez les lentilles cuites et égouttées et mélangez.C'est prêt !' )
 			;
 			
 INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE` , `ID_CATEGORIE`, `NB_PERSONNE` )
@@ -82,12 +81,11 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '1', '3' ),
 			( '1', '4' ),
 			( '1', '5' ),
-			( '1', '6' ),
-			( '2', '1' ),
-			( '2', '2' ),
-			( '2', '3' ),
-			( '2', '4' ),
-			( '2', '5' ),
+			( '2', '6' ),
+			( '2', '7' ),
+			( '2', '8' ),
+			( '2', '9' ),
+			( '2', '10' ),
 			;
 			
 			
