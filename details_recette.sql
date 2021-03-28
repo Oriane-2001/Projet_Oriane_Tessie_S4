@@ -175,26 +175,26 @@ INSERT INTO `CHOIX` ( `ID_INTERNAUTE` , `ID_RECETTE` )
 		
 INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE` )
 		VALUES
-			( '1', '1', 3 , 'unites'),
+			( '1', '1', 3 , NULL),
 			( '1', '2' , 140, 'grammes'),
-			( '1', '3', 3, 'unites' ),
+			( '1', '3', 3, NULL ),
 			( '1', '4', 2, 'cuilleres a soupe' ),
 			( '1', '5', 1, 'pincee' ),
 			( '1', '6', 1, 'pincee' ),
 			
 			( '2', '7', 250 , 'grammes'),
 			( '2', '8', 20 , 'centilitres'),
-			( '2', '9', 1 , 'unite'),
+			( '2', '9', 1 , NULL),
 			( '2', '10', 2 , 'cuilleres a soupe'),
 			( '2', '11', 2 , 'cuilleres a cafe'),
-			( '2', '12', 1 , 'unite'),
+			( '2', '12', 1 , NULL),
 			( '2', '13', 1 , 'morceau'),
 			( '2', '14', 2 , 'cuilleres a soupe'),
 			
-			( '3', '15', 1 , 'unite'),
+			( '3', '15', 1 , NULL),
 			( '3', '16', 200 , 'grammes'),
 			( '3', '11', 50 , 'grammes'),
-			( '3', '17', 3 , 'unites'),
+			( '3', '17', 3 , NULL),
 			( '3', '18', 100 , 'grammes'),
 			( '3', '19', 15 , 'centilitres'),
 			( '3', '20', 1 , 'cuilleres a cafe'),
@@ -206,12 +206,12 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '4', '5', 1 , 'pincee'),
 			( '4', '6', 1 , 'pincee'),
 			( '4', '18', 1 , 'poignee'),
-			( '4', 22', 3 , 'unites'),
-			( '4', '17', 4 , 'unites'),
+			( '4', '22', 3 , ' '),
+			( '4', '17', 4 , ' '),
 			
 			( '5', '23', 300 , 'grammes'),
-			( '5', '12', 1 , 'unites'),
-			( '5', '24', 1 , 'unites'),
+			( '5', '12', 1 , ' '),
+			( '5', '24', 1 , ' '),
 			( '5', '25', 1 , 'cuilleres a soupe'),
 			( '5', '26', 1 , 'cuilleres a soupe'),
 			( '5', '21', 1 , 'pincee'),
@@ -221,7 +221,7 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '5', '30', 150 , 'grammes'),
 			( '5', '5', 1 , 'cuilleres a cafe'),
 			 
-			( '6', '31', 1 , 'unite'),
+			( '6', '31', 1 , ' '),
 			( '6', '32', 12 , 'centilitres'),
 			( '6', '33', 150 , 'grammes'),
 			( '6', '18', 100 , 'grammes'),
@@ -232,7 +232,7 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			 
 			( '7', '35', 125 , 'grammes'),
 			( '7', '36', 200 , 'grammes'),
-			( '7', '28', 1 , 'unite'),
+			( '7', '28', 1 , ' '),
 			( '7', '5', 1 , 'pincee'),
 			( '7', '6', 1 , 'pincee'),
 			( '7', '37', 4 , 'cuilleres a soupe'),
@@ -240,9 +240,9 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			
 			( '8', '22', 1 , 'kilogramme'),
 			( '8', '39', 20 , 'centilitres'),
-			( '8', '17', 1 , 'unite'),
-			( '8', '40', 3 , 'unite'),
-			( '8', '28', 1 , 'unite'),
+			( '8', '17', 1 , ' '),
+			( '8', '40', 3 , ' '),
+			( '8', '28', 1 , ' '),
 			( '8', '18', 50 , 'grammes'),
 			( '8', '41', 30 , 'grammes'),
 			( '8', '5', 1 , 'pincee'),
@@ -259,12 +259,12 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '10', '47', 1 , 'cuillere a cafe'),
 			( '10', '5', 1 , 'pincee'),
 			( '10', '48', 2 , 'cuilleres a soupe'),
-			( '10', '17', 1 , 'unite'),
+			( '10', '17', 1 , ' '),
 			( '10', '41', 25 , 'grammes'),
 			( '10', '49', 1 , 'cuilleres a cafe'),
 			( '10', '39', 15 , 'centilitres'),
 			( '10', '50', 100 , 'grammes'),
-			( '10', '51', 1 , 'unite')
+			( '10', '51', 1 , ' ')
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
