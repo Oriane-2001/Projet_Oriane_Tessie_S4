@@ -69,10 +69,10 @@ INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE
 INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 		VALUES
 			( '1', '1', 'Egouttez le thon et emiettez-le dans un saladier' ),
-			( '2', '2', 'Ajoutez-y la mayonnaise, du sel et du poivre et melangez bien ' ),
+			( '2', '2', 'Ajoutez y la mayonnaise, du sel et du poivre et melangez bien ' ),
 			( '3', '3', 'Lavez et essorez les feuilles de laitue' ),
-			( '4', '4', 'Etalez les tortillas sur un plan de travail, garnissez les d’une feuille de laitue et recouvrez de preparation au thon' ),
-			( '5', '5', 'Roulez les tortillas et coupez-les en deux. C'est pret ' ),
+			( '4', '4', "Etalez les tortillas sur un plan de travail, garnissez les d’une feuille de laitue et recouvrez de preparation au thon" ),
+			( '5', '5', "Roulez les tortillas et coupez-les en deux. C'est pret ! " ),
 			 
 			( '6', '1', 'Rincez les lentilles, mettez-les dans une casserole et recouvrez-les d’eau. Portez a ebullition, baissez le feu et laissez mijoter pendant une quinzaine de minutes, jusqu’a ce que les lentilles soient tendres. Egouttez.' ),
 			( '7', '2', 'Pelez puis emincez l'oignon et l'ail. Pelez puis rapez ou emincez tres finement le gingembre.' ),
