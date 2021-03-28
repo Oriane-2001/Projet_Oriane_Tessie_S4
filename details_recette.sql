@@ -250,7 +250,7 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			
 			( '9', '42', 300 , 'grammes'),
 			( '9', '43', 500 , 'grammes'),
-			( '9', '44', 1 , 'cube),
+			( '9', '44', 1 , 'cube'),
 			( '9', '37', 2 , 'cuilleres a soupe'),
 			( '9', '45', 40 , 'grammes'),
 			( '9', '14', 1 , 'cuilleres a soupe'),
