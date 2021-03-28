@@ -48,12 +48,22 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '39', 'lait' ),
 			( '40', 'steaks hachés' ),
 			( '41', 'beurre' ),
+			( '42', 'escalope de poulet' ),
+			( '43', 'pates linguine' ),
+			( '44', 'bouillon de volaille' ),
+			( '45', 'roquefort' ),
+			( '46', 'farine' ),
+			( '47', 'levure chimique' ),
+			( '48', 'sucre blanc en poudre' ),
+			( '49', 'extrait de vanille' ),
+			( '50', 'fruits rouges congelés' ),
+			( '51', 'sachet de sucre vanillé' )
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
 		VALUES
 			( '1', 'PORTE', 'Mathias', '25', 'mathias.porte@gmail.com', 'Jeu12', 'Mathias7' ),
-			( '2', 'BOURGEOIS', 'Tessie', '19', 'tessie.bourgeois@gmail.com', 'Petitchien', 'Tess' ),
+			( '2', 'BOURGEOIS', 'Tessie', '19', 'tessie.bourgeois@gmail.com', 'Petitchien', 'Tess' )
 			;
 			
 INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
@@ -111,10 +121,16 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '44', '6', 'Répéter l'étape précédente et mettre un peu de beurre par-dessus le tout.' ),
 			( '45', '7', 'Faire cuire à 180°C entre 15 et 30 minutes jusqu'à ce que le plat soit gratiné. C’est prêt !' ),
 			
-			( '46', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
-			( '47', '9', 'Saupoudrez de parmesan. C'est prêt !' ),
-			( '48', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
-			( '49', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
+			( '46', '1', 'Couper le poulet en petits morceaux. Mettre l'huile dans la poêle ainsi que le bouillon de volaille et y faire revenir les escalopes. Laisser griller le poulet.' ),
+			( '47', '2', 'Faire bouillir l'eau pour les pâtes, et les faire cuire.' ),
+			( '48', '3', 'Dans une casserole à part, faire chauffer la crème fraîche avec le Roquefort jusqu'à ce que le fromage fonde. Mélanger régulièrement.' ),
+			( '49', '4', 'Mettre les morceaux de poulet dans la casserole et mélanger brièvement.' ),
+			( '50', '5', 'Disposez les pâtes dans une assiette et la sauce au roquefort et au poulet. C’est prêt!' ),
+			
+			( '51', '1', 'Mettez les fruits rouges dans un bol et parsemez dessus le sucre vanillé. Mélangez et réservez.' ),
+			( '52', '2', 'Dans un saladier, mélangez la farine, la levure et le sucre avec le sel. ' ),
+			( '53', '3', 'Dans un autre récipient, battez au fouet l’œuf, ajoutez le beurre fondu, la vanille et le lait, puis incorporez-les à la première préparation pour former une pâte épaisse. Laissez reposer la pâte une heure.' ),
+			( '54', '4', 'Faites chauffer une poêle avec un peu d’huile. Quand la poêle est bien chaude, versez la pâte. Quand de petits trous apparaissent à la surface de la pâte,retournez et faites cuire l’autre côté jusqu’à ce que les pancakes soient dorés. C’est prêt !' )
 			;
 			
 INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE` , `ID_CATEGORIE`, `NB_PERSONNE` )
@@ -127,8 +143,8 @@ INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE`
 			( '6', 'Pizza tomate et mozzarella', '2021-03-26', '2', 4 ),
 			( '7', 'Risotto aux champignons', '2021-03-27', '2', 2 ),
 			( '8', 'Hachis parmentier', '2021-03-27', '3', 2 ),
-			( '9', 'Tarte au thon et aux herbes de provence', '2021-03-26', '3', 4 ),
-			( '10', 'Tarte au thon et aux herbes de provence', '2021-03-26', '3', 4 )
+			( '9', 'Linguine au poulet et au roquefort', '2021-03-27', '3', 2 ),
+			( '10', 'Pancakes aux fruit rouges', '2021-03-26', '3', 2)
 			;
 			
 			
@@ -223,32 +239,32 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '7', '26', 1 , 'cuillères à soupe'),
 			
 			( '8', '22', 1 , 'kilogramme'),
-			( '8', '39', 1 , 'centilitres'),
+			( '8', '39', 20 , 'centilitres'),
 			( '8', '17', 1 , 'unité'),
-			( '8', '40', 1 , 'unité'),
+			( '8', '40', 3 , 'unité'),
 			( '8', '28', 1 , 'unité'),
-			( '8', '18', 1 , 'grammes'),
-			( '8', '41', 1 , 'grammes'),
+			( '8', '18', 50 , 'grammes'),
+			( '8', '41', 30 , 'grammes'),
 			( '8', '5', 1 , 'pincée'),
 			( '8', '6', 1 , 'pincée'),
 			
-			( '9', '39', 1 , 'cuillères à café'),
-			( '9', '39', 1 , 'cuillères à café'),
-			( '9', '39', 1 , 'cuillères à café'),
-			( '9', '39', 1 , 'cuillères à café'),
-			( '9', '39', 1 , 'cuillères à café'),
-			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '42', 300 , 'grammes'),
+			( '9', '43', 500 , 'grammes'),
+			( '9', '44', 1 , 'cube),
+			( '9', '37', 2 , 'cuillères à soupe'),
+			( '9', '45', 40 , 'grammes'),
+			( '9', '14', 1 , 'cuillères à soupe'),
 			
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café'),
-			( '10', '39', 1 , 'cuillères à café')
+			( '10', '46', 150 , 'grammes'),
+			( '10', '47', 1 , 'cuillère à café'),
+			( '10', '5', 1 , 'pincée'),
+			( '10', '48', 2 , 'cuillères à soupe'),
+			( '10', '17', 1 , 'unité'),
+			( '10', '41', 25 , 'grammes'),
+			( '10', '49', 1 , 'cuillères à café'),
+			( '10', '39', 15 , 'centilitres'),
+			( '10', '50', 100 , 'grammes'),
+			( '10', '51', 1 , 'unité')
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
@@ -307,9 +323,16 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '8', '44' ),
 			( '8', '45' ),
 			
-			( '9', '10' ),
-			 
-			;
+			( '9', '46' ),
+			( '9', '47' ),
+			( '9', '48' ),
+			( '9', '49' ),
+			( '9', '50' ),
+			
+			( '10', '51' ),
+			( '10', '52' ),
+			( '10', '53' ),
+			( '10', '54' );
 			
 			
 INSERT INTO `CREATION` ( `ID_RECETTE`, `ID_INTERNAUTE` )
@@ -323,5 +346,4 @@ INSERT INTO `CREATION` ( `ID_RECETTE`, `ID_INTERNAUTE` )
 			( '7', '2' ),
 			( '8', '1' ),
 			( '9', '2' ),
-			( '10', '2' )
-			;
+			( '10', '2' );
