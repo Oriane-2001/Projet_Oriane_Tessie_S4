@@ -44,7 +44,7 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '35', 'riz spécial risotto' ),
 			( '36', 'champignons de Paris' ),
 			( '37', 'crème fraîche' ),
-			( '38', 'brocolis' ),
+			( '38', 'miel' ),
 			( '39', 'lait' ),
 			( '40', 'steaks hachés' ),
 			( '41', 'beurre' ),
