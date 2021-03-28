@@ -74,11 +74,11 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '21', '1', 'Épluchez et coupez les oignons. Épluchez la gousse d'ail.' ),
 			( '22', '2', 'Faire chauffer la sauteuse avec l'huile d'olive. Ajoutez les oignons et la gousse d'ail entière.Couvrir et cuire à feu doux une dizaine de minutes.' ),
 			( '23', '3', 'Dans le bol d'un robot mixeur, mettre les bouquets de brocoli et mixer jusqu'à obtenir une semoule.' ),
-			( '24', '4', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
-			( '25', '5', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
-			( '26', '6', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
-			( '27', '7', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
-			( '28', '8', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '24', '4', 'Faire chauffer l'eau et le sel.' ),
+			( '25', '5', 'Dans la sauteuse, versez le vin blanc. Cuire deux à trois minutes, jusqu'à évaporation.' ),
+			( '26', '6', 'Ajoutez le thym, les pâtes et l'eau chaude salée.Portez à ébullition et cuire douze à quinze minutes à feu vif en remuant régulièrement. L'eau doit être presque entièrement absorbée.' ),
+			( '27', '7', 'Retirez du feu.Ajouter la semoule de brocoli. Couvrir et laisser reposer cinq minutes.' ),
+			( '28', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
 			 
 			 
 			;
@@ -156,10 +156,21 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '4', '5', 1 , 'pincée'),
 			( '4', '6', 1 , 'pincée'),
 			( '4', '18', 1 , 'poignée'),
-			( '4', 22', 1 , 'unités'),
-			( '4', '17', 1 , 'unités'),
+			( '4', 22', 3 , 'unités'),
+			( '4', '17', 4 , 'unités'),
 			
-			( '3', '6', 1 , 'unités'),
+			( '5', '23', 300 , 'grammes'),
+			( '5', '12', 1 , 'unités'),
+			( '5', '24', 1 , 'unités'),
+			( '5', '25', 1 , 'cuillères à soupe'),
+			( '5', '26', 1 , 'cuillères à soupe'),
+			( '5', '27', 1 , 'centilitres'),
+			( '5', '28', 1 , 'grammes'),
+			( '5', '29', 1 , 'centilitres'),
+			( '5', '30', 1 , 'grammes'),
+			( '5', '5', 1 , 'cuillères à café'),
+			 
+			( '3', '6', 1 , 'cuillères à café'),
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
@@ -188,6 +199,15 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '4', '19' ),
 			( '4', '20' ),
 			 
+			( '5', '21' ),
+			( '5', '22' ),
+			( '5', '23' ),
+			( '5', '24' ),
+			( '5', '25' ),
+			( '5', '26' ),
+			( '5', '27' ),
+			( '5', '28' ),
+			
 			( '2', '10' ),
 			;
 			
@@ -198,7 +218,7 @@ INSERT INTO `CREATION` ( `ID_RECETTE`, `ID_INTERNAUTE` )
 			( '2', '1' ),
 			( '3', '2' ),
 			( '4', '2' ),
-			( '5', '2' ),
+			( '5', '1' ),
 			( '6', '2' ),
 			( '7', '2' ),
 			( '8', '2' ),
