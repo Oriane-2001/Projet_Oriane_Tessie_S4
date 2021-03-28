@@ -37,6 +37,11 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '28', 'oignon blanc' ),
 			( '29', 'vin blanc' ),
 			( '30', 'brocolis' ),
+			( '31', 'pâte à pizza' ),
+			( '32', 'sauce tomate' ),
+			( '33', 'mozzarella' ),
+			( '34', 'origan' ),
+			( '35', 'brocolis' ),
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
@@ -79,6 +84,13 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '26', '6', 'Ajoutez le thym, les pâtes et l'eau chaude salée.Portez à ébullition et cuire douze à quinze minutes à feu vif en remuant régulièrement. L'eau doit être presque entièrement absorbée.' ),
 			( '27', '7', 'Retirez du feu.Ajouter la semoule de brocoli. Couvrir et laisser reposer cinq minutes.' ),
 			( '28', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
+			
+			( '29', '1', 'Étaler la pâte en cercle sur une plaque recouverte de papier sulfurisé. La tartiner de sauce tomate.' ),
+			( '30', '2', 'Égoutter la mozzarella et la couper en petites tranches, puis parsemer le tout sur la pizza.' ),
+			( '31', '3', 'Ajouter les olives noires et le gruyère râpé. Parsemer d'origan, de sel, de poivre et d'un filet d'huile d'olive. ' ),
+			( '32', '4', 'Enfourner à 220°C pendant 20 à 25 minutes.C'est prêt !' ),
+			 
+			( '28', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
 			 
 			 
 			;
@@ -89,8 +101,8 @@ INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE`
 			( '2', 'Dahl de lentilles corail', '2021-03-26', '1', 4 ),
 			( '3', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
 			( '4', 'Galettes de pommes de terre au thym ', '2021-03-26', '1', 1 ),
-			( '5', 'Penne rigate aux oignons et brocolis', '2021-03-26', '2', 3 ),
-			( '6', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '5', 'Penne rigate aux oignons et brocolis', '2021-03-26', '1', 3 ),
+			( '6', 'Pizza tomate et mozzarella', '2021-03-26', '2', 4 ),
 			( '7', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
 			( '8', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
 			( '9', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
@@ -164,13 +176,24 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '5', '24', 1 , 'unités'),
 			( '5', '25', 1 , 'cuillères à soupe'),
 			( '5', '26', 1 , 'cuillères à soupe'),
-			( '5', '27', 1 , 'centilitres'),
-			( '5', '28', 1 , 'grammes'),
-			( '5', '29', 1 , 'centilitres'),
-			( '5', '30', 1 , 'grammes'),
+			( '5', '21', 1 , 'pincée'),
+			( '5', '27', 90 , 'centilitres'),
+			( '5', '28', 250, 'grammes'),
+			( '5', '29', 5 , 'centilitres'),
+			( '5', '30', 150 , 'grammes'),
 			( '5', '5', 1 , 'cuillères à café'),
 			 
-			( '3', '6', 1 , 'cuillères à café'),
+			( '6', '31', 1 , 'unité'),
+			( '6', '32', 12 , 'centilitres'),
+			( '6', '33', 150 , 'grammes'),
+			( '6', '18', 100 , 'grammes'),
+			( '6', '34', 1 , 'pincée'),
+			( '6', '5', 1 , 'pincée'),
+			( '6', '6', 1 , 'pincée'),
+			( '6', '25', 1 , 'cuillères à soupe'),
+			 
+			( '7', '6', 1 , 'cuillères à café'),
+			( '7', '6', 1 , 'cuillères à café'),
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
@@ -208,7 +231,17 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '5', '27' ),
 			( '5', '28' ),
 			
-			( '2', '10' ),
+			( '6', '29' ),
+			( '6', '30' ),
+			( '6', '31' ),
+			( '6', '32' ),
+			
+			( '6', '10' ),
+			( '6', '10' ),
+			( '6', '10' ),
+			( '6', '10' ),
+			( '6', '10' ),
+			 
 			;
 			
 			
