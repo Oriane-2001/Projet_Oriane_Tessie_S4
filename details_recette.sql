@@ -27,6 +27,16 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '18', 'gruyère râpé' ),
 			( '19', 'crème fraiche liquide' ),
 			( '20', 'herbes de Provence' ),
+			( '21', 'thym' ),
+			( '22', 'pommes de terre' ),
+			( '23', 'pates Penne Rigate' ),
+			( '24', 'citron' ),
+			( '25', 'huile d'olive' ),
+			( '26', 'parmesan' ),
+			( '27', 'eau' ),
+			( '28', 'oignon blanc' ),
+			( '29', 'vin blanc' ),
+			( '30', 'brocolis' ),
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
@@ -57,7 +67,18 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '16', '6', 'Versez la préparation sur le fond de tarte.' ),
 			( '17', '7', 'Enfournez pour 35 minutes de cuisson à 180°C. C'est prêt !' ),
 			
-			( '12', '2', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '18', '1', 'Faites cuire les pommes de terre et les écrasez dans un saladier. Ajoutez les oeufs battus, le fromage râpé, le sel, le poivre et le thym.' ),
+			( '19', '2', 'Faire chauffer une poêle avec un peu d'huile. Mettre deux cuillères à soupe de la préparation et étaler légèrement pour faire une galette de la taille d'un pancake (environ 10cm de diamètre et moins d'1cm d'épaisseur).' ),
+			( '20', '3', 'Laissez cuire à feu moyen pendant deux minutes sur chaque face. La galette doit être dorée.Si nécessaire, re-huiler la poêle entre chaque cuisson. C’est prêt!' ),
+			
+			( '21', '1', 'Épluchez et coupez les oignons. Épluchez la gousse d'ail.' ),
+			( '22', '2', 'Faire chauffer la sauteuse avec l'huile d'olive. Ajoutez les oignons et la gousse d'ail entière.Couvrir et cuire à feu doux une dizaine de minutes.' ),
+			( '23', '3', 'Dans le bol d'un robot mixeur, mettre les bouquets de brocoli et mixer jusqu'à obtenir une semoule.' ),
+			( '24', '4', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '25', '5', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '26', '6', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '27', '7', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
+			( '28', '8', 'Dans un saladier, casser les œufs entiers et mélangez.' ),
 			 
 			 
 			;
@@ -67,6 +88,13 @@ INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE`
 			( '1', 'Wrap au thon et mayonnaise', '2021-02-10', '2', 3 ),
 			( '2', 'Dahl de lentilles corail', '2021-03-26', '1', 4 ),
 			( '3', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '4', 'Galettes de pommes de terre au thym ', '2021-03-26', '1', 1 ),
+			( '5', 'Penne rigate aux oignons et brocolis', '2021-03-26', '2', 3 ),
+			( '6', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '7', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '8', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '9', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
+			( '10', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 )
 			;
 			
 			
@@ -122,6 +150,16 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '3', '20', 1 , 'cuillères à café'),
 			( '3', '5', 1 , 'pincée'),
 			( '3', '6', 1 , 'pincée'),
+			
+			( '4', '14', 1 , 'cuillères à soupe'),
+			( '4', '21', 1 , 'pincée'),
+			( '4', '5', 1 , 'pincée'),
+			( '4', '6', 1 , 'pincée'),
+			( '4', '18', 1 , 'poignée'),
+			( '4', 22', 1 , 'unités'),
+			( '4', '17', 1 , 'unités'),
+			
+			( '3', '6', 1 , 'unités'),
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
@@ -146,6 +184,10 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '3', '16' ),
 			( '3', '17' ),
 			
+			( '4', '18' ),
+			( '4', '19' ),
+			( '4', '20' ),
+			 
 			( '2', '10' ),
 			;
 			
@@ -155,4 +197,11 @@ INSERT INTO `CREATION` ( `ID_RECETTE`, `ID_INTERNAUTE` )
 			( '1', '1' ),
 			( '2', '1' ),
 			( '3', '2' ),
+			( '4', '2' ),
+			( '5', '2' ),
+			( '6', '2' ),
+			( '7', '2' ),
+			( '8', '2' ),
+			( '9', '2' ),
+			( '10', '2' )
 			;
