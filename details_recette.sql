@@ -106,7 +106,7 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '31', '3', "Ajouter les olives noires et le gruyere rape. Parsemer d'origan, de sel, de poivre et d'un filet d'huile d'olive. " ),
 			( '32', '4', "Enfourner a 220°C pendant 20 à 25 minutes.C'est pret !" ),
 			 
-			( '33', '1', 'Emincez l'oignon. Lavez les champignons , et taillez les grossierement.' ),
+			( '33', '1', "Emincez l'oignon. Lavez les champignons , et taillez les grossierement." ),
 			( '34', '2', "Faites revenir les oignons dans un peu de beurre. Lorsqu'ils ont pris un peu de couleur, ajoutez les champignons. Laissez reduire, et enlevez l'excedent d'eau si nécessaire. " ),
 			( '35', '3', 'Lorsque les champignons sont totalement reduits, ajoutez la creme fraiche, et assaisonnez avec du sel, du poivre, et le parmesan. Reservez.' ),
 			( '36', '4', "Pour la preparation du riz, dans une grande poele, versez un peu d'huile, et le riz a sec. Laissez deux minutes, les grains de riz deviennent alors legerement translucides. Ensuite ajoutez un verre d'eau et laissez cuire." ),
