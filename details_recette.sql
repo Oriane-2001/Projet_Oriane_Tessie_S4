@@ -41,7 +41,13 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 			( '32', 'sauce tomate' ),
 			( '33', 'mozzarella' ),
 			( '34', 'origan' ),
-			( '35', 'brocolis' ),
+			( '35', 'riz spécial risotto' ),
+			( '36', 'champignons de Paris' ),
+			( '37', 'crème fraîche' ),
+			( '38', 'brocolis' ),
+			( '39', 'lait' ),
+			( '40', 'steaks hachés' ),
+			( '41', 'beurre' ),
 			;
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
@@ -90,9 +96,25 @@ INSERT INTO `ETAPES` (`ID_ETAPE` , `NUMERO_ETAPE`,`CONTENU_ETAPE` )
 			( '31', '3', 'Ajouter les olives noires et le gruyère râpé. Parsemer d'origan, de sel, de poivre et d'un filet d'huile d'olive. ' ),
 			( '32', '4', 'Enfourner à 220°C pendant 20 à 25 minutes.C'est prêt !' ),
 			 
-			( '28', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
+			( '33', '1', 'Emincez l'oignon. Lavez les champignons , et taillez les grossièrement.' ),
+			( '34', '2', 'Faîtes revenir les oignons dans un peu de beurre. Lorsqu'ils ont pris un peu de couleur, ajoutez les champignons. Laissez réduire, et enlevez l'excédent d'eau si nécessaire. ' ),
+			( '35', '3', 'Lorsque les champignons sont totalement réduits, ajoutez la crème fraîche, et assaisonnez avec du sel, du poivre, et le parmesan. Réservez.' ),
+			( '36', '4', 'Pour la préparation du riz, dans une grande poêle, versez un peu d'huile, et le riz "à sec". Laissez deux minutes, les grains de riz deviennent alors légèrement translucides. Ensuite ajoutez un verre d'eau et laissez cuire.' ),
+			( '37', '5', 'Lorsque l'eau a été absorbée, ajoutez un nouveau verre, etc... Goûtez le riz au fur et à mesure pour juger de la cuisson. Il faut environ 30 min de cuisson au total.' ),
+			( '38', '6', 'Il n'y a plus qu'à ajouter votre garniture et laisser mijoter quelques minutes. C'est prêt !' ),
 			 
-			 
+			( '39', '1', 'Eplucher les pommes de terre et les couper. Puis faire cuire les pommes de terre dans de l'eau salée.' ),
+			( '40', '2', 'Égoutter les pommes de terre et écraser les pommes de terre avec un presse-purée ou une fourchette. Mettre le beurre, l'œuf, le sel et le lait chaud et mélanger.' ),
+			( '41', '3', 'Cuire les steaks hachés dans une poêle puis les couper en petits morceaux.' ),
+			( '42', '4', 'Ajouter un oignon coupé en petits morceaux et faire cuire le tout à feu doux, en remuant régulièrement.' ),
+			( '43', '5', 'Dans un plat à gratins, étaler la moitié de la purée préparée, puis étaler la moitié de la préparation steaks et mettre une couche de gruyère râpé.' ),
+			( '44', '6', 'Répéter l'étape précédente et mettre un peu de beurre par-dessus le tout.' ),
+			( '45', '7', 'Faire cuire à 180°C entre 15 et 30 minutes jusqu'à ce que le plat soit gratiné. C’est prêt !' ),
+			
+			( '46', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
+			( '47', '9', 'Saupoudrez de parmesan. C'est prêt !' ),
+			( '48', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
+			( '49', '8', 'Saupoudrez de parmesan. C'est prêt !' ),
 			;
 			
 INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE` , `ID_CATEGORIE`, `NB_PERSONNE` )
@@ -103,10 +125,10 @@ INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE`
 			( '4', 'Galettes de pommes de terre au thym ', '2021-03-26', '1', 1 ),
 			( '5', 'Penne rigate aux oignons et brocolis', '2021-03-26', '1', 3 ),
 			( '6', 'Pizza tomate et mozzarella', '2021-03-26', '2', 4 ),
-			( '7', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
-			( '8', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
-			( '9', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 ),
-			( '10', 'Tarte au thon et aux herbes de provence', '2021-03-26', '2', 4 )
+			( '7', 'Risotto aux champignons', '2021-03-27', '2', 2 ),
+			( '8', 'Hachis parmentier', '2021-03-27', '3', 2 ),
+			( '9', 'Tarte au thon et aux herbes de provence', '2021-03-26', '3', 4 ),
+			( '10', 'Tarte au thon et aux herbes de provence', '2021-03-26', '3', 4 )
 			;
 			
 			
@@ -192,8 +214,41 @@ INSERT INTO `UTILISATION` (  `ID_RECETTE` , `ID_INGREDIENT`, `QUANTITE`, `UNITE`
 			( '6', '6', 1 , 'pincée'),
 			( '6', '25', 1 , 'cuillères à soupe'),
 			 
-			( '7', '6', 1 , 'cuillères à café'),
-			( '7', '6', 1 , 'cuillères à café'),
+			( '7', '35', 125 , 'grammes'),
+			( '7', '36', 200 , 'grammes'),
+			( '7', '28', 1 , 'unité'),
+			( '7', '5', 1 , 'pincée'),
+			( '7', '6', 1 , 'pincée'),
+			( '7', '37', 4 , 'cuillères à soupe'),
+			( '7', '26', 1 , 'cuillères à soupe'),
+			
+			( '8', '22', 1 , 'kilogramme'),
+			( '8', '39', 1 , 'centilitres'),
+			( '8', '17', 1 , 'unité'),
+			( '8', '40', 1 , 'unité'),
+			( '8', '28', 1 , 'unité'),
+			( '8', '18', 1 , 'grammes'),
+			( '8', '41', 1 , 'grammes'),
+			( '8', '5', 1 , 'pincée'),
+			( '8', '6', 1 , 'pincée'),
+			
+			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '39', 1 , 'cuillères à café'),
+			( '9', '39', 1 , 'cuillères à café'),
+			
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café'),
+			( '10', '39', 1 , 'cuillères à café')
 			;
 			
 INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
@@ -236,11 +291,23 @@ INSERT INTO `CONTENANT` ( `ID_RECETTE`, `ID_ETAPE` )
 			( '6', '31' ),
 			( '6', '32' ),
 			
-			( '6', '10' ),
-			( '6', '10' ),
-			( '6', '10' ),
-			( '6', '10' ),
-			( '6', '10' ),
+			( '7', '33' ),
+			( '7', '34' ),
+			( '7', '35' ),
+			( '7', '36' ),
+			( '7', '37' ),
+			( '7', '38' ),
+			
+			
+			( '8', '39' ),
+			( '8', '40' ),
+			( '8', '41' ),
+			( '8', '42' ),
+			( '8', '43' ),
+			( '8', '44' ),
+			( '8', '45' ),
+			
+			( '9', '10' ),
 			 
 			;
 			
@@ -254,7 +321,7 @@ INSERT INTO `CREATION` ( `ID_RECETTE`, `ID_INTERNAUTE` )
 			( '5', '1' ),
 			( '6', '2' ),
 			( '7', '2' ),
-			( '8', '2' ),
+			( '8', '1' ),
 			( '9', '2' ),
 			( '10', '2' )
 			;
